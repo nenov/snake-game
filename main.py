@@ -3,7 +3,6 @@ from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
 import time
-from playsound import playsound
 
 
 # screen setup
