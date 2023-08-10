@@ -1,8 +1,6 @@
 import turtle
 from turtle import Turtle
 
-from playsound import playsound
-
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
 UP = 90
@@ -22,7 +20,6 @@ class Snake:
         self.head = self.segments[0]
         self.head.shape('diamond')
         self.last_input = self.head.heading()
-        playsound('media/game-start.mp3')
 
     def create_snake(self):
         for position in STARTING_POSITIONS:

@@ -1,7 +1,5 @@
 from turtle import Turtle
 
-from playsound import playsound
-
 ALIGNMENT = "center"
 FONT = ('Courier', 16, 'normal')
 
@@ -23,7 +21,6 @@ class Scoreboard(Turtle):
 
     def game_over(self):
         self.goto(0, 0)
-        playsound('media/game-over.mp3')
         self.write(f"GAME OVER", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
